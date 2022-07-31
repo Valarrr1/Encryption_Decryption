@@ -4,8 +4,8 @@ key = Fernet.generate_key()  # create a key
 print(key)
 msg = "welcome".encode()
 creypter = Fernet(key)  # store the key to use again
-encrpted_msg = creypter.encrpt(msg)  # encrypt the message
+encrpted_msg = creypter.encrypt(msg)  # encrypt the message
 print(encrpted_msg)
 
 decrypted_msg = creypter.decrypt(encrpted_msg)  # decrypt the message
-print(decryted_msg)
+print(decrypted_msg)
